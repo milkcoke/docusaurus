@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Access Modifier
 description: Introduce about `internal` keyword comparing to `protected`.
 tags: [kotlin]
@@ -17,14 +16,14 @@ last_update:
 
 ## Example
 #### Directory Structure
-![Directory Structure](./img/2023-01-06_directory_structure.png)
+![Directory Structure](./schreenshots/2023-01-06_directory_structure.png)
 
 #### protected.it
-![Protected example code](./img/2023-01-06_protected.png)
+![Protected example code](./schreenshots/2023-01-06_protected.png)
 서로 다른 패키지에서 접근 불가능.
 
 #### internal.kt
-![Internal example code](./img/2023-01-06_internal.png)
+![Internal example code](./schreenshots/2023-01-06_internal.png)
 동일 모듈 내에서 접근 가능
 
 
@@ -36,7 +35,7 @@ _"A module is a set of Kotlin files compiled together."_
 ### 동일 모듈의 예
 Intellij IDEA 모듈
 
-![Same module](./img/2023-01-06_same_module.png)
+![Same module](./schreenshots/2023-01-06_same_module.png)
 
 
 ---
