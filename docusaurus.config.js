@@ -29,7 +29,7 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -48,7 +48,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
@@ -91,6 +91,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: ['docusaurus-plugin-sass'],
 };
 
 module.exports = config;
