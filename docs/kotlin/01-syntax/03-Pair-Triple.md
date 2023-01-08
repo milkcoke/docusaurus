@@ -35,6 +35,7 @@ Data class 기 때문에 구조분해할당이 가능하다.
     @Test
     internal fun testDestructuringPair() {
         val point = Pair(3, 5)
+        // highlight-next-line
         val (X, Y) = point // Destructuring
         assertThat(X).isEqualTo(3)
         assertThat(Y).isEqualTo(5)
