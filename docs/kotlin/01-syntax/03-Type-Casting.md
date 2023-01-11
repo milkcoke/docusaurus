@@ -9,11 +9,11 @@ last_update:
 # Introduction
 Type casting is the process of converting a variable data type from one to another.
 
-Keep in mind that type casting operation is error-prone one. \
+Keep in mind that type casting operation is error-prone one. <br></br>
 This is why you learn about casting operation. If not, fatal error or exception would occur.
 
 ## Any
-`Any` is the root of the Kotlin class, which means that every Kotlin class has `Any` as a parent class. \
+`Any` is the root of the Kotlin class, which means that every Kotlin class has `Any` as a parent class. <br></br>
 In other terms, any Kotlin variable can have `Any` as a type.
 
 
@@ -42,8 +42,8 @@ val str1 : String = num as String
 println(str1)   
 ```
 
-So, everytime you perform an explicit unsafe cast through the `as` operator \
-You should consider that a `ClassCastException` might be thrown. \
+So, everytime you perform an explicit unsafe cast through the `as` operator <br></br>
+You should consider that a `ClassCastException` might be thrown. <br></br>
 If you want to prevent this error from crashing your application, you must handle it as follows:
 ```kotlin
 val num : Any? = null
@@ -58,7 +58,7 @@ try {
 
 
 ## Safe Casting
-The `as?` cast operator is called safe because it returns `null` when the cast can't be performed. \
+The `as?` cast operator is called safe because it returns `null` when the cast can't be performed. <br></br>
 In other words, it's considered safe because it allows you to avoid exceptions, returning `null` on failure.
 
 `as?` operator allow receiver variable should always be nullable when casting fails.
@@ -94,7 +94,7 @@ This would no longer fail. it would print:
 ```text
 null
 ```
-You can avoid `ClassCastException` even though fail since 'Integer' can't be cast to 'String'. \
+You can avoid `ClassCastException` even though fail since 'Integer' can't be cast to 'String'. <br></br>
 So the `try ~ catch` statement is no longer required when using `as?` the safe cast operator.
 
 #### You have to consider receiver variable has `null` value when cast failed.
@@ -109,11 +109,11 @@ if (str1 == null) {
 ```
 
 ## 📝 Summary
-- Use `as` operator only when you can make sure the cast will be successful. \
+- Use `as` operator only when you can make sure the cast will be successful. <br></br>
 For example when casting a type to its supertype in an inheritance hierarchy.
 
 - Use `as?` operator with handling null-checking code. 
-Your application wouldn't be shut down even type casting fails. \
+Your application wouldn't be shut down even type casting fails. <br></br>
 However, required how to deal with them.
 
 
