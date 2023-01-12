@@ -91,5 +91,5 @@ class Task(_name: String, _priority: Int = DEFAULT_PRIORITY){
 |----------------------|-----------------------------------|-------------------------------------|
 | **When to use**      | Variable value to remain constant | Control variable with custom method |
 | **Declaration time** | Compile                           | Runtime                             |
-| **Assignment times** | Just one                          | Multiple times                      |
+| **Data type**        | Primitive and String              | All                                 |
 
