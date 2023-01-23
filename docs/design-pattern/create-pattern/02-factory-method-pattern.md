@@ -3,10 +3,11 @@ title: Factory Method Pattern
 description: Understand about factory method pattern
 tags: [design-pattern]
 last_update:
-    date: 2023-01-23
+    date: 2023-01-24
 ---
 
 ## Why to use
+- 클라이언트가 **특정 클래스의 생성 방법을 모른 체로** 사용할 수 있게하고 OCP 를 지키며 클래스 종류를 쉽게 확장할 수 있게 하기위함.
 
 ### Example
 ![Ship and ShipFactory relation](./screenshots/Ship_ShipFactory_diagram.png)
@@ -79,7 +80,9 @@ public class ShipFactory {
 👉 **팩토리 패턴은 위 예제에서 ShipFactory 클래스를 확장함으로써 다양한 Ship 을 커버할 수 있게한다.**
 
 ## When to use
-특정 클래스를 생성하는 방식을 OCP 원칙을 지키며 변화에 독립적으로 확장하고 싶을 때.
+- **특정 클래스를 생성하는 방식을 OCP 원칙을 지키며 변화에 독립적으로 확장하고 싶을 때**
+- 특정 클래스의 상태 관리를 `static` 키워드 없이 하고 싶을 때
+
 
 ## How to use
 ![Factory method pattern diagram](./screenshots/factory_method_pattern.svg)
