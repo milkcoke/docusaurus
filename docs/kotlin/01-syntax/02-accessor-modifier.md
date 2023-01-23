@@ -16,14 +16,14 @@ last_update:
 
 ## Example
 #### Directory Structure
-![Directory Structure](./schreenshots/2023-01-06_directory_structure.png)
+![Directory Structure](./screenshots/2023-01-06_directory_structure.png)
 
 #### protected.it
-![Protected example code](./schreenshots/2023-01-06_protected.png)
+![Protected example code](./screenshots/2023-01-06_protected.png)
 서로 다른 패키지에서 접근 불가능.
 
 #### internal.kt
-![Internal example code](./schreenshots/2023-01-06_internal.png)
+![Internal example code](./screenshots/2023-01-06_internal.png)
 동일 모듈 내에서 접근 가능
 
 
@@ -35,7 +35,7 @@ _"A module is a set of Kotlin files compiled together."_
 ### 동일 모듈의 예
 Intellij IDEA 모듈
 
-![Same module](./schreenshots/2023-01-06_same_module.png)
+![Same module](./screenshots/2023-01-06_same_module.png)
 
 
 ---

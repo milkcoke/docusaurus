@@ -29,7 +29,7 @@ class Human() {
 > ⚠️ This code throw `stackOverflowError` <br></br>
 since call each other infinitely in `get()`
 
-![getter naming](schreenshots/2023-01-12_getter.png)
+![getter naming](./screenshots/2023-01-12_getter.png)
 
 
 ### How to solve this problem?
@@ -116,7 +116,7 @@ class Customer(val name: String) {
     }
 ```
 
-![Test code result](schreenshots/2023-01-12_test_code_result.png)
+![Test code result](./screenshots/2023-01-12_test_code_result.png)
 
 
 ## Conclusion
