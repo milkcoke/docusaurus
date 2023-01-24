@@ -99,11 +99,6 @@ class ClientCommentTest {
 #### HttpFilterCommentService.java
 ```java
 public class HttpFilterCommentService extends CommentService {
-
-    /**
-     * http 프로토콜은 지원하지 않음.
-     * @param comment
-     */
     @Override
     public void addComment(String comment) {
         if (isSpamComment(comment)) {
@@ -131,7 +126,7 @@ client.writeComment("http://karma.com");
 #### 1. 자식 클래스 추가
 상속과 생성자 주입을 통해 문제를 해결하는 방법이다. <br></br>
 클래스 다이어그램을 표현해보면 다음과 같이 필요한 정책이 늘어날 때마다 클래스 추가가 불가피하다.
-![Comments Service Diagrams](./screenshots/Comment_service_diagrams.png)
+![Comments Service Diagrams](screenshots/Comment_service_diagrams.png)
 
 
 > 자바에서 상속은 단일 상속만 가능하고, 컴파일 타임에 정책 설정이 완료되어야 하기 때문에 유연성이 떨어진다. <br></br>
@@ -270,6 +265,26 @@ Http, Trimming 필터 모두 적용된 것을 확인할 수 있다.
 https://karma.com
 ```
 이처럼 런타임 내에 동적으로 필터링 정책을 적용할수도, 적용하지 않을 수도 있다.
+
+## Pros and Cons
+### 장점
+- 새로운 클래스 생성 없이 기존 기능 조합 <br></br>
+ex) HttpFilterDecorator + TrimmingFilterDecorator 조합 <br></br>
+조합이 불가능하다면 한 클래스 내에 2가지 이상의 필터를 같이 걸어야함.
+- 런타임에 동적으로 기능 교체
+
+### 단점
+- 데코레이터 조합 코드 복잡성 증가
+> 데코레이터 패턴을 사용하지 않을 때 서브 클래스 수가 $O(2^N)$ 으로 늘어날 수 있기 때문에 단점이라 보기에 민망함.
+
+#### SRP 위반 코드
+```java
+if (enabledHttpFilter && enabledTrimFilter) {
+    // 정적으로 모든 조합에 대한 상속 클래스가 존재해야함 => 서브 클래스 수 급격하게 증가 위험
+    // 여러 책임을 갖는 서브 클래스 생성시 Single Responsibility Principal (SRP) 위배
+    commentService = new HttpFilterAndTrimmingComment(); // 분리될 수 있는 Filter 로직 2개를 하나의 클래스가 묶음 형태로 가지고있다.
+}
+```
 
 ---
 ## 🔗 Reference
