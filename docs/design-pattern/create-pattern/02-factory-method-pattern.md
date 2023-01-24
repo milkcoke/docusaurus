@@ -1,7 +1,7 @@
 ---
 title: Factory Method Pattern
 description: Understand about factory method pattern
-tags: [design-pattern]
+tags: [design-pattern, create-pattern]
 last_update:
     date: 2023-01-24
 ---

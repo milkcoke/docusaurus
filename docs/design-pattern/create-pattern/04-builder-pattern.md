@@ -1,7 +1,7 @@
 ---
 title: Builder Pattern
 description: Understand about builder pattern
-tags: [design-pattern]
+tags: [design-pattern, create-pattern]
 last_update:
     date: 2023-01-22
 ---
