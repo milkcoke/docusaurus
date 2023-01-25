@@ -266,6 +266,12 @@ https://karma.com
 ```
 이처럼 런타임 내에 동적으로 필터링 정책을 적용할수도, 적용하지 않을 수도 있다.
 
+## 내부 동작 설명 영상
+어떻게 하나의 객체로부터 한 번의 addComment 메소드 호출로 여러 정책을 모두 적용할 수 있는 것일까? <br></br>
+영상과 함께 파헤쳐보자
+
+<iframe width="900" height="600" src="https://www.youtube.com/embed/0XQNSO_0kSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Pros and Cons
 ### 장점
 - 새로운 클래스 생성 없이 기존 기능 조합 <br></br>
