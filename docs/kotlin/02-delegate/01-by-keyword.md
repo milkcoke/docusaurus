@@ -109,6 +109,66 @@ class SmartPhoneTest {
 </TabItem>
 </Tabs>
 
+## Delegates singleton object
+
+
+
+### vetoable
+We can limit the change the value using `by` keyword and `Delegates.vetoable()`
+#### SmartPhone.kt
+```kotlin
+class SmartPhone (
+    private val camera: Camera = DefaultCamera(),
+    private val phone: Phone = DefaultPhone()
+) : Camera by camera, Phone by phone {
+    // initial value is 1
+    // highlight-next-line
+    var serialNumber : Int by Delegates.vetoable(1){property, oldValue, newValue ->
+        // only true if range in [1,10]
+        newValue in 1 .. 10
+    }
+}
+```
+
+#### SmartPhoneTest.kt
+```kotlin
+class SmartPhoneTest {
+    private val smartPhone = SmartPhone()
+
+    @DisplayName("시리얼 초기값 검사")
+    @Test
+    internal fun testSerialNumberInitValue() {
+        assertEquals(1, smartPhone.serialNumber)
+    }
+
+    @DisplayName("시리얼넘버 변경 감지")
+    @Test
+    internal fun testSerialNumberChange() {
+        smartPhone.serialNumber = 11
+        // failed to change to 11 range 1..10
+        assertNotEquals(11, smartPhone.serialNumber)
+    }
+}
+```
+
+### observable
+If you want only capturing changing. Use `Delegates.observable()`<br></br>
+This doesn't return anything (Unit)
+
+#### SmartPhone.kt
+```kotlin
+class SmartPhone (
+    private val camera: Camera = DefaultCamera(),
+    private val phone: Phone = DefaultPhone()
+) : Camera by camera, Phone by phone {
+    // initial value is 1
+    // highlight-next-line
+    var serialNumber : Int by Delegates.observable(1) {property, oldValue, newValue ->
+        println("${property.name} changed from $oldValue to $newValue")
+    }
+}
+```
+
 ## Reference
 [delegation - kotlin docs](https://kotlinlang.org/docs/delegation.html)
 
