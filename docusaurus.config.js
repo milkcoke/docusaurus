@@ -106,6 +106,12 @@ const config = {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
+      algolia: {
+        appId: 'K48MV43JV4',
+        apiKey: '247f525579b9b063cc646641cb667447',
+        indexName: 'usaurus',
+        debug: false,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
