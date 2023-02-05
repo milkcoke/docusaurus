@@ -2,6 +2,7 @@
 title: Custom class for delegation 
 description: Know about how to define custom delegation class
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-02-04
 ---

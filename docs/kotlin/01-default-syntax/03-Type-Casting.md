@@ -2,6 +2,7 @@
 title: Type Casting
 description: Introduce type casting in kotlin.
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-01-10
 ---

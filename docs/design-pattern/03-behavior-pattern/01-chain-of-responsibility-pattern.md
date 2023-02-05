@@ -2,6 +2,7 @@
 title: Chain of Responsibility Pattern
 description: Understand about chain of responsibility pattern
 tags: [design-pattern, behavior-pattern]
+keywords: [design pattern, chain of responsibility pattern]
 last_update:
     date: 2023-02-01
 ---

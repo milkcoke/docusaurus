@@ -2,6 +2,7 @@
 title: Pair and Triple in Kotlin
 description: Introduce Pair and Triple data class in kotlin.
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-01-06
 ---

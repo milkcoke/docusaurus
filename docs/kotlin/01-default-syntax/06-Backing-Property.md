@@ -2,6 +2,7 @@
 title: Backing property
 description: How to use backing field and property with `lazy`
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-01-12
 ---

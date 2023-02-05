@@ -2,6 +2,7 @@
 title: State Pattern
 description: Understand about state pattern
 tags: [design-pattern, behavior-pattern]
+keywords: [design pattern, state pattern]
 last_update:
     date: 2023-02-02
 ---

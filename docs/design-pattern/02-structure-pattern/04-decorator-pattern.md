@@ -2,6 +2,7 @@
 title: Decorator Pattern
 description: Understand about decorator pattern
 tags: [design-pattern, structure-pattern]
+keywords: [design pattern, decorator pattern]
 last_update:
     date: 2023-01-24
 ---

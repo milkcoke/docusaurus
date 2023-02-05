@@ -2,6 +2,7 @@
 title: Adapter Pattern
 description: Understand about adapter pattern
 tags: [design-pattern, structure-pattern]
+keywords: [design pattern, adapter pattern]
 last_update:
     date: 2023-01-30
 ---

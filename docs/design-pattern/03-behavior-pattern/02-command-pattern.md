@@ -2,6 +2,7 @@
 title: Command Pattern
 description: Understand about command pattern
 tags: [design-pattern, behavior-pattern]
+keywords: [design pattern, command pattern]
 last_update:
     date: 2023-01-28
 ---

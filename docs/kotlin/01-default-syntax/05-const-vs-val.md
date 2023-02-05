@@ -2,6 +2,7 @@
 title: const vs val
 description: Compare const to val
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-01-11
 ---

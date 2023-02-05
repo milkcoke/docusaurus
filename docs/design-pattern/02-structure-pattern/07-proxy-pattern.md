@@ -2,6 +2,7 @@
 title: Proxy Pattern
 description: Understand about proxy pattern
 tags: [design-pattern, structure-pattern]
+keywords: [design pattern, proxy pattern]
 last_update:
     date: 2023-01-26
 ---

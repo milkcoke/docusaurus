@@ -2,6 +2,7 @@
 title: Access Modifier
 description: Introduce about `internal` keyword comparing to `protected`.
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-01-06
 ---

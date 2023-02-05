@@ -2,6 +2,7 @@
 title: Singleton Pattern
 description: Why, When, How to use singleton pattern?
 tags: [kotlin]
+keywords: [kotlin]
 last_update:
     date: 2023-01-13
 ---
