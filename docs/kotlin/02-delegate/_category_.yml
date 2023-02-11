@@ -1,5 +1,5 @@
 label: Delegate
-position: 1
+position: 2
 link:
   type: generated-index
-  description: What you have to know syntax when to use kotlin.
+  description: Delegate in kotlin
