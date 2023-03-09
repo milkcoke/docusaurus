@@ -60,3 +60,32 @@ You get reusable code using generic type. <br></br>
 Make it easier to write modular code that can be used in different contexts. <br></br>
 However, take care about overuse of generic types can make code more complex and harder to read. <br></br>
 It's important to get balance between flexibility and simplicity.
+
+
+### Type inference in Generic
+Typescript compiler supports type inference at generic type function from input type. <br></br>
+It's enough smart to infer type.
+
+```typescript
+function pickRandomElement<T>(arr: T[]): T {
+    const randomIdx = Math.floor(Math.random() * arr.length)
+    return arr[randomIdx]
+}
+
+describe('Generics', ()=> {
+    test('Pick random number from array',()=>{
+        const nums = [1, 6, 3, 4]
+        const randomNum = pickRandomElement(nums)
+        // Typescript compiler already knows typeof randomNum is number
+        // also knows input type is number[]
+        randomNum.toExponential(3)
+    })
+
+    test('Pick random string from array', ()=>{
+        const strs = ['khazix', 'rumble', 'jayce']
+        const str = pickRandomElement(strs)
+        // Typescript compiler is smart!
+        str.toLowerCase()
+    })
+}
+```
