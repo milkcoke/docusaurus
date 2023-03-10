@@ -66,13 +66,14 @@ It's important to get balance between flexibility and simplicity.
 Typescript compiler supports type inference at generic type function from input type. <br></br>
 It's enough smart to infer type.
 
+#### pickRandomElement.test.ts
 ```typescript
-function pickRandomElement<T>(arr: T[]): T {
-    const randomIdx = Math.floor(Math.random() * arr.length)
-    return arr[randomIdx]
-}
-
 describe('Generics', ()=> {
+    function pickRandomElement<T>(arr: T[]): T {
+        const randomIdx = Math.floor(Math.random() * arr.length)
+        return arr[randomIdx]
+    }
+    
     test('Pick random number from array',()=>{
         const nums = [1, 6, 3, 4]
         const randomNum = pickRandomElement(nums)
@@ -87,5 +88,42 @@ describe('Generics', ()=> {
         // Typescript compiler is smart!
         str.toLowerCase()
     })
-}
+})
 ```
+#### mergeObject.test.ts
+```typescript
+describe('Generic2',()=>{
+    // Notify type and return type to typescript compiler.
+    function mergeObj<T,U>(obj1: T, obj2: U): T & U {
+        return {
+            ...obj1,
+            ...obj2
+        }
+    }
+
+    interface RGB {
+        R: number
+        G: number
+        B: number
+    }
+    interface Circle {
+        radius: number
+    }
+
+    test('Merge any type object', ()=>{
+        const rgb : RGB = {R: 221, G: 15, B: 93}
+        const circle : Circle = {radius: 4}
+        // TSC let you know what's the return type of `mergeObj()` by type inference
+        // since Generic <T, U> is used to define function. 
+        // highlight-next-line
+        const drawing = mergeObj(rgb, circle)
+
+        expect(drawing.R).toBe(rgb.R)
+        expect(drawing.G).toBe(rgb.G)
+        expect(drawing.B).toBe(rgb.B)
+        expect(drawing.radius).toBe(circle.radius)
+    })
+})
+```
+
+
