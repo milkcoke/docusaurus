@@ -1,23 +1,5 @@
 m-falcon:
-  name: SeungHun Moon
+  name: Milkcoke
   title: Backend engineer @ Nexon
   url: https://www.linkedin.com/in/%EC%8A%B9%ED%9B%88-%EB%AC%B8-750789197/
   image_url: img/m_falcon_logo.png
-
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
-
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png

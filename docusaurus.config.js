@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Milkcoke',
-  tagline: "Milkcoke's TIL",
+  tagline: "Milkcoke's Log",
   url: 'https://milkcoke.github.io', // real base url path
   baseUrl: '/docusaurus/', // postfix
   onBrokenLinks: 'throw',
@@ -76,7 +76,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Milkcoke's TIL",
+        title: "Milkcoke's Space",
         logo: {
           alt: 'My Site Logo',
           src: 'img/m_falcon_nomark.png',
@@ -88,7 +88,17 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/', label: 'Blog', position: 'left'},
+          // {
+          //   // type: 'doc',
+          //   docId: 'toolbox',
+          //   position: 'left',
+          //   label: 'Dev-Toolbox'
+          // },
+          {
+            to: '/',
+            label: 'Blog',
+            position: 'left'
+          },
           {
             href: 'https://github.com/milkcoke/',
             label: 'GitHub',
