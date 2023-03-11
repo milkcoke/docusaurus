@@ -31,9 +31,6 @@ Process is shown below
 6. In one side, IO completion, the I/O goroutine is returned to new OS thread.
 7. Old OS thread is returned to thread pool cache.
 
-
-
-
 ## Asynchronous system call
 ### Problem
 Asynchronous system call occurs when file descriptor (**FD** as acronym) is used on network IO with non-blocking mode. <br></br>
