@@ -126,4 +126,67 @@ describe('Generic2',()=>{
 })
 ```
 
+#### constraintGeneric.test.ts
+```typescript
+describe('Restrict generic parameter with extends', ()=>{
+    // Restrict only object parameter on function
+    // highlight-next-line
+    function mergeObj<T extends Object,U extends Object>(obj1: T, obj2: U): T & U {
+        return {
+            ...obj1,
+            ...obj2
+        }
+    }
 
+    test('merge: primitive types should not be spread except string', ()=>{
+        expect(mergeObj({name: 'khazix'}, 4)).toStrictEqual({name: 'khazix'})
+        expect(mergeObj({name: 'khazix'}, false)).toStrictEqual({name: 'khazix'})
+        expect(mergeObj({name: 'khazix'}, null)).toStrictEqual({name: 'khazix'})
+        expect(mergeObj({name: 'khazix'}, 'str')).not.toStrictEqual(({name: 'khazix'}))
+    })
+})
+```
+
+#### constraintGeneric2.test.ts
+```typescript
+describe('Restrict generic parameter with extends or interface', ()=> {
+    // When to use type generic and when to use interface on parameter?
+    // More generic code, and modifiable
+    // However, it's not easy to maintain the code
+    function printDoubleLength<T extends Lengthy>(thing: T): number {
+        return thing.length * 2
+    }
+
+    interface Lengthy {
+        length: number
+    }
+
+
+    function printDoubleLengthWithInterface(thing: Lengthy): number {
+        return thing.length * 2
+    }
+
+
+    test('Constraint with generic', () => {
+        const str = 'sdt'
+        expect(printDoubleLength(str)).toBe(str.length * 2)
+    })
+    
+    test('Constraint with interface', ()=>{
+        const lengtyd = {
+            length: 7,
+            age: 23
+        }
+        expect(printDoubleLengthWithInterface(lengtyd)).toBe(lengtyd.length * 2)
+    })
+})
+```
+
+
+### How to decide to use generic with `extends` or interface?
+:::tip
+I usually recommend `interface` for maintenance.
+:::
+
+Generic type function is not easy to maintain even if it's a little more flexible. <br></br>
+However, when to make library code, you could consider using generic with `extends`.
