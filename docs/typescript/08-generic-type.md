@@ -7,6 +7,9 @@ last_update:
     date: 2023-03-07
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## When to use
 Required general function for covering all type. <br></br>
 Suppose return itself as it is. 
@@ -190,3 +193,86 @@ I usually recommend `interface` for maintenance.
 
 Generic type function is not easy to maintain even if it's a little more flexible. <br></br>
 However, when to make library code, you could consider using generic with `extends`.
+
+### Default type allocation
+
+<Tabs>
+<TabItem value="makeArray" label="makeArray.ts">
+
+Default type allocation as shown below. <br></br>
+If use bracket on general function, type allocation occurs, if don't, default type is allocated.
+
+```typescript
+// Default type is string <T = string>
+// highlight-next-line
+function makeEmptyList<T = string>(): T[] {
+    return []
+}
+
+const strs = makeEmptyList()
+// Just allowed push 'string'
+// highlight-next-line
+strs.push('5')
+
+const numbers = makeEmptyList<number>()
+// Just allowed to push 'number'
+// highlight-next-line
+numbers.push(5)
+```
+</TabItem>
+
+<TabItem value="Champion" label="ChampionList.ts">
+
+```typescript
+export type VERSION = 'v1' | 'v2'
+
+export interface ChampionV1 {
+    version: 'v1'
+    name: string
+    hp: number
+}
+export interface ChampionV2 {
+    version: 'v2'
+    name: string
+    hp: number
+    mp: number
+}
+
+
+export default class ChampionList<T> {
+    public queue: T[] = []
+    add(element: T): void {
+        this.queue.push(element)
+    }
+
+    printAllQueue(): void {
+        for (const element of this.queue) {
+            console.log(element)
+        }
+    }
+}
+```
+</TabItem>
+
+<TabItem value="ChampionTest" label="ChampionList.test.ts">
+
+champV1List permit only add element of `v1` not allowed since type allocation with bracket
+```typescript
+const champV1List = new ChampionList<ChampionV1>()
+champV1List.add({
+    version: 'v1',
+    name: 'Garen',
+    hp: 500,
+})
+
+champV1List.add({
+    // 🚫 Not allowed
+    // highlight-next-line
+    version: 'v2',
+    name: 'Garen',
+    hp: 550,
+    mp: 0
+})
+```
+</TabItem>
+</Tabs>
