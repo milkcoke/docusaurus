@@ -4,7 +4,7 @@ description: When and Why need generic type
 tags: [typescript]
 keywords: [typescript]
 last_update:
-    date: 2023-03-07
+    date: 2023-03-14
 ---
 
 import Tabs from '@theme/Tabs';
