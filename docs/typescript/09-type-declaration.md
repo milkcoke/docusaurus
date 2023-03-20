@@ -4,7 +4,7 @@ description: How to use .d.ts file?
 tags: [typescript]
 keywords: [typescript]
 last_update:
-    date: 2023-03-17
+    date: 2023-03-20
 ---
 
 import Tabs from '@theme/Tabs';
@@ -119,5 +119,59 @@ If the package doesn't have `.d.ts` file , you have to add @types/${package-name
 Also, if @types/* not exists too? and then you should create `.d.ts` for using it with type in typescript project.
 :::
 
+### Advantage
+1. comes with its advantage
+2. Generic + interface => TSC infer type flexibly
+
+#### AxiosResponseType.test.ts
+
+```typescript
+import axios, {AxiosResponse} from 'axios'
+
+interface User {
+    id: number
+    name: string
+    email: string
+    address: {
+        street: string
+        suite: string
+        city: string
+        zipcode: string
+        geo: {
+            lat: string
+            lng: string
+        }
+    },
+    phone: string
+    website: string
+    company: {
+        name: string
+        catchPhrase: string
+        bs: string
+    }
+}
+
+axios
+    // get<T = any, R = axios.AxiosResponse<T>, D = any>(url: string, config?: axios.AxiosRequestConfig<D>): Promise<R>;
+    // T: User => R: AxiosResponse<User
+    .get<User>('https://jsonplaceholder.typicode.com/users/1')
+    .then((res)=>{
+        // user's type is interpreted as User
+        const user = res.data
+        console.dir(user)
+    })
+    .catch(console.error)
+
+axios
+    .get('https://jsonplaceholder.typicode.com/users')
+    .then((res: AxiosResponse<User[]>)=>{
+        // user's type is interpreted as User
+        // Typescript anticipate response data type is User[]
+        const users = res.data
+        console.dir(users)
+    })
+    .catch(console.error)
+})
+```
 
 
