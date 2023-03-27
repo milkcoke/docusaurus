@@ -174,4 +174,5 @@ axios
 })
 ```
 
-
+## Tips
+If `index.d.ts` file doesn't exist, you could find `@types/{package-name}` on [DefinitelyTyped github](https://github.com/DefinitelyTyped/DefinitelyTyped).
