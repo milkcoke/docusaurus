@@ -4,7 +4,7 @@ description: How to use .d.ts file?
 tags: [typescript]
 keywords: [typescript]
 last_update:
-    date: 2023-03-23
+    date: 2023-03-28
 ---
 
 import Tabs from '@theme/Tabs';
@@ -140,6 +140,43 @@ Or use bundle library like [browserify](https://github.com/browserify/browserify
 :::
 
 
+
+## import 'type' only
+- Just `import type` this is helpful when I want to refer to just type not the module with actual code.
+- Reduce the size of compiled file since it must be removed completely when transpiling.
+
+### Example 
+
+<Tabs>
+<TabItem value="type" label="types/Item.ts">
+
+```typescript
+export type Item = 'HP' | 'MP'
+
+export class ItemKing {
+    name: string
+}
+```
+</TabItem>
+
+<TabItem value="example" label="itemList.ts">
+
+Can't be used for extension when to use `import type`
+
+```typescript
+import {Item} from "./types/Item";
+// highlight-the-nextline
+import type {ItemKing} from './types/Item'
+const itemList : Item[] = []
+
+// Error occurs 🚫
+// highlight-the-nextline
+class SecondItemKing extends ItemKing{
+
+}
+```
+</TabItem>
+</Tabs>
 
 
 
