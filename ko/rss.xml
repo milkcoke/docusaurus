@@ -4,7 +4,7 @@
         <title>Milkcoke Blog</title>
         <link>https://milkcoke.github.io/docusaurus/ko/</link>
         <description>Milkcoke Blog</description>
-        <lastBuildDate>Mon, 27 Mar 2023 00:41:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Mar 2023 00:49:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Welcome]]></title>
             <link>https://milkcoke.github.io/docusaurus/ko/welcome</link>
             <guid>https://milkcoke.github.io/docusaurus/ko/welcome</guid>
-            <pubDate>Mon, 27 Mar 2023 00:41:24 GMT</pubDate>
+            <pubDate>Tue, 28 Mar 2023 00:49:38 GMT</pubDate>
             <category>facebook</category>
             <category>hello</category>
             <category>docusaurus</category>
