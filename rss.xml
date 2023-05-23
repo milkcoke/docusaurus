@@ -4,7 +4,7 @@
         <title>Milkcoke Blog</title>
         <link>https://milkcoke.github.io/docusaurus/</link>
         <description>Milkcoke Blog</description>
-        <lastBuildDate>Fri, 31 Mar 2023 10:57:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 May 2023 12:40:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,10 +12,28 @@
             <title><![CDATA[Welcome]]></title>
             <link>https://milkcoke.github.io/docusaurus/welcome</link>
             <guid>https://milkcoke.github.io/docusaurus/welcome</guid>
-            <pubDate>Fri, 31 Mar 2023 10:57:55 GMT</pubDate>
+            <pubDate>Tue, 23 May 2023 12:40:56 GMT</pubDate>
             <category>facebook</category>
             <category>hello</category>
             <category>docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[Toolbox v1.0.0]]></title>
+            <link>https://milkcoke.github.io/docusaurus/dev-toolbox/return-code</link>
+            <guid>https://milkcoke.github.io/docusaurus/dev-toolbox/return-code</guid>
+            <pubDate>Tue, 23 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[macOS download]]></description>
+            <content:encoded><![CDATA[<p><a target="_blank" href="/docusaurus/assets/files/Toolbox_Dev-110200005ea5b7988fdc2f3f0f7e5312.dmg">macOS download</a></p>]]></content:encoded>
+            <category>dev-toolbox</category>
+        </item>
+        <item>
+            <title><![CDATA[Toolbox Dev Enduser License]]></title>
+            <link>https://milkcoke.github.io/docusaurus/dev-toolbox/enduser-license</link>
+            <guid>https://milkcoke.github.io/docusaurus/dev-toolbox/enduser-license</guid>
+            <pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Return code according to installation scenario]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="return-code-according-to-installation-scenario">Return code according to installation scenario<a href="#return-code-according-to-installation-scenario" class="hash-link" aria-label="Direct link to Return code according to installation scenario" title="Direct link to Return code according to installation scenario">​</a></h2><table><thead><tr><th>Return Code</th><th>Description</th></tr></thead><tbody><tr><td>1602</td><td>Installation cancelled by user</td></tr><tr><td>1638</td><td>Application already exists</td></tr><tr><td>1618</td><td>Installation already in progress</td></tr><tr><td>112</td><td>Disk space is full</td></tr><tr><td>3010</td><td>Reboot required</td></tr><tr><td>1646</td><td>Network Failure</td></tr><tr><td>1603</td><td>Package rejected during installation</td></tr><tr><td>0</td><td>Installation successful</td></tr></tbody></table>]]></content:encoded>
+            <category>dev-toolbox</category>
         </item>
         <item>
             <title><![CDATA[Toolbox installation return code]]></title>
@@ -23,7 +41,7 @@
             <guid>https://milkcoke.github.io/docusaurus/dev-toolbox/return-code</guid>
             <pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Return code according to installation scenario]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="return-code-according-to-installation-scenario">Return code according to installation scenario<a href="#return-code-according-to-installation-scenario" class="hash-link" aria-label="Direct link to Return code according to installation scenario" title="Direct link to Return code according to installation scenario">​</a></h2><table><thead><tr><th>Return Code</th><th>Description</th></tr></thead><tbody><tr><td>1602</td><td>Installation cancelled by user</td></tr><tr><td>1638</td><td>Application already exists</td></tr><tr><td>1618</td><td>Installation already in progress</td></tr><tr><td>112</td><td>Disk space is full</td></tr><tr><td>3010</td><td>Reboot required</td></tr><tr><td>1646</td><td>Network Failure</td></tr><tr><td>1603</td><td>Package rejected during installation</td></tr><tr><td>0</td><td>Installation successful</td></tr></tbody></table>]]></content:encoded>
+            <content:encoded><![CDATA[<p><a target="_blank" href="/docusaurus/assets/files/Toolbox_Dev-110200005ea5b7988fdc2f3f0f7e5312.dmg">macOS download</a></p>]]></content:encoded>
             <category>dev-toolbox</category>
         </item>
         <item>
