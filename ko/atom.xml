@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://milkcoke.github.io/docusaurus/ko/</id>
     <title>Milkcoke Blog</title>
-    <updated>2023-05-23T12:40:56.000Z</updated>
+    <updated>2023-05-23T12:50:47.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://milkcoke.github.io/docusaurus/ko/"/>
     <subtitle>Milkcoke Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://milkcoke.github.io/docusaurus/ko/welcome</id>
         <link href="https://milkcoke.github.io/docusaurus/ko/welcome"/>
-        <updated>2023-05-23T12:40:56.000Z</updated>
+        <updated>2023-05-23T12:50:47.000Z</updated>
         <author>
             <name>Milkcoke</name>
             <uri>https://www.linkedin.com/in/%EC%8A%B9%ED%9B%88-%EB%AC%B8-750789197/</uri>
@@ -22,11 +22,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Toolbox v1.0.0]]></title>
-        <id>https://milkcoke.github.io/docusaurus/ko/dev-toolbox/return-code</id>
-        <link href="https://milkcoke.github.io/docusaurus/ko/dev-toolbox/return-code"/>
+        <id>https://milkcoke.github.io/docusaurus/ko/dev-toolbox/Toolbox-v1.0.0</id>
+        <link href="https://milkcoke.github.io/docusaurus/ko/dev-toolbox/Toolbox-v1.0.0"/>
         <updated>2023-05-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[macOS download]]></summary>
-        <content type="html"><![CDATA[<p><a target="_blank" href="/docusaurus/ko/assets/files/Toolbox_Dev-110200005ea5b7988fdc2f3f0f7e5312.dmg">macOS download</a></p>]]></content>
+        <summary type="html"><![CDATA[| Platform      | Download                                               |]]></summary>
+        <content type="html"><![CDATA[<table><thead><tr><th>Platform</th><th>Download</th></tr></thead><tbody><tr><td>Windows (x64)</td><td><a href="/docusaurus/ko/">Toolbox-Windows-x64.exe</a></td></tr><tr><td>macOS (x64)</td><td>Not yet supported</td></tr><tr><td>macOS (arm64)</td><td><a target="_blank" href="/docusaurus/ko/assets/files/Toolbox_Dev-110200005ea5b7988fdc2f3f0f7e5312.dmg">Toolbox-osx-arm64.dmg</a></td></tr><tr><td>Linux</td><td>Not yet supported</td></tr></tbody></table>]]></content>
         <author>
             <name>Milkcoke</name>
             <uri>https://www.linkedin.com/in/%EC%8A%B9%ED%9B%88-%EB%AC%B8-750789197/</uri>
@@ -52,7 +52,7 @@
         <link href="https://milkcoke.github.io/docusaurus/ko/dev-toolbox/return-code"/>
         <updated>2023-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Return code according to installation scenario]]></summary>
-        <content type="html"><![CDATA[<p><a target="_blank" href="/docusaurus/ko/assets/files/Toolbox_Dev-110200005ea5b7988fdc2f3f0f7e5312.dmg">macOS download</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="return-code-according-to-installation-scenario">Return code according to installation scenario<a href="#return-code-according-to-installation-scenario" class="hash-link" aria-label="Return code according to installation scenario에 대한 직접 링크" title="Return code according to installation scenario에 대한 직접 링크">​</a></h2><table><thead><tr><th>Return Code</th><th>Description</th></tr></thead><tbody><tr><td>1602</td><td>Installation cancelled by user</td></tr><tr><td>1638</td><td>Application already exists</td></tr><tr><td>1618</td><td>Installation already in progress</td></tr><tr><td>112</td><td>Disk space is full</td></tr><tr><td>3010</td><td>Reboot required</td></tr><tr><td>1646</td><td>Network Failure</td></tr><tr><td>1603</td><td>Package rejected during installation</td></tr><tr><td>0</td><td>Installation successful</td></tr></tbody></table>]]></content>
         <author>
             <name>Milkcoke</name>
             <uri>https://www.linkedin.com/in/%EC%8A%B9%ED%9B%88-%EB%AC%B8-750789197/</uri>
