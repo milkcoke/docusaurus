@@ -1,8 +1,8 @@
 ---
-slug: dev-toolbox/introduction
+slug: toolbox-dev/introduction
 title: Introduction
 authors: [m-falcon]
-tags: [dev-toolbox]
+tags: [toolbox-dev]
 ---
 
 ## What's Dev toolbox?
@@ -11,7 +11,7 @@ tags: [dev-toolbox]
 Dev-toolbox can simplify the process of setting up a development environment by clicking the installation.
 
 ### Demo
-![Dev Toolbox demo](/img/toolbox/app_demo.gif)
+![Dev Toolbox demo](/img/toolbox_demo/v1.0.0.gif)
 
 ## When & Where to use?
 Dev-toolbox helps you set up installers for example, as shown below.

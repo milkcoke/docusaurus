@@ -1,8 +1,8 @@
 ---
-slug: dev-toolbox/return-code
+slug: toolbox-dev/return-code
 title: Toolbox installation return code
 authors: [m-falcon]
-tags: [dev-toolbox]
+tags: [toolbox-dev]
 ---
 
 ## Return code according to installation scenario
