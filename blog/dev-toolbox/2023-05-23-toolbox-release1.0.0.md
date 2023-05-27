@@ -1,27 +1,26 @@
 ---
-slug: toolbox-dev/Toolbox-v1.0.0
+slug: toolbox-dev/releases/v1.0.0
 title: Toolbox Dev v1.0.0
 authors: [m-falcon]
 tags: [toolbox-dev]
 ---
 
-## What's Dev toolbox?
+import ImageButton from "../../src/components/ButtonFeatures/imageButton";
+
+## What's Toolbox Dev?
 > **_Just 5 minutes, get ready for installer tool._**
 
-Dev-toolbox can simplify the process of setting up a development environment by clicking the installation.
-
-### Demo
-![Dev Toolbox demo](/img/toolbox_demo/v1.0.0.gif)
-
+Toolbox Dev can simplify the process of setting up a development environment by clicking the installation.
 
 ## Install now!
 
-| Platform      | Download                                                 |
-|---------------|----------------------------------------------------------|
-| Windows (x64) | [Toolbox-Windows-x64.exe](/applications/Toolbox_Dev.exe) |
-| macOS (x64)   | Not yet supported                                        |
-| macOS (arm64) | [Toolbox-osx-arm64.dmg](/applications/Toolbox_Dev.dmg)   |
-| Linux         | Not yet supported                                        |
+<ImageButton/>
+
+> _Please wait Linux, MacOS x64(Intel Mac) version._
+
+## Demo
+![Dev Toolbox demo](/img/toolbox_demo/v1.0.0.gif)
+
 
 ## When & Where to use?
 Dev-toolbox helps you set up installers for example, as shown below.

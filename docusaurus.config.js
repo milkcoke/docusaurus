@@ -52,11 +52,14 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          authorsMapPath: "./authors.yml",
           routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://milkcoke.github.io/docusaurus/blog/',
+          blogSidebarTitle: 'Toolbox Dev',
+          blogSidebarCount: 'ALL'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -85,21 +88,15 @@ const config = {
         },
         items: [
           {
+            to: '/',
+            label: 'Toolbox Dev',
+            position: 'left'
+          },
+          {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
-          },
-          // {
-          //   // type: 'doc',
-          //   docId: 'toolbox',
-          //   position: 'left',
-          //   label: 'Dev-Toolbox'
-          // },
-          {
-            to: '/',
-            label: 'Blog',
-            position: 'left'
           },
           {
             href: 'https://github.com/milkcoke/',

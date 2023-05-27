@@ -29,7 +29,8 @@
     "react-dom": "^18.2.0",
     "rehype-katex": "^5.0.0",
     "remark-math": "^3.0.1",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.4.1",
