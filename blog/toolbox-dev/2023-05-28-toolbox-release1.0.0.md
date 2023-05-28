@@ -1,8 +1,10 @@
 ---
 slug: toolbox-dev/releases/v1.0.0
 title: Toolbox Dev v1.0.0
+description: Toolbox Dev is desktop app for developers. Welcome Release Toolbox Dev v1.0.0!
 authors: [m-falcon]
 tags: [toolbox-dev]
+keywords: [toolbox-dev, toolbox]
 ---
 
 import ImageButton from "../../src/components/ButtonFeatures/imageButton";

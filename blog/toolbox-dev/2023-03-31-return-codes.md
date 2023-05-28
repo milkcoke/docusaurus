@@ -3,6 +3,7 @@ slug: toolbox-dev/return-code
 title: Toolbox installation return code
 authors: [m-falcon]
 tags: [toolbox-dev]
+keywords: [toolbox-dev, toolbox]
 ---
 
 ## Return code according to installation scenario

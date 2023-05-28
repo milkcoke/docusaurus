@@ -1,8 +1,10 @@
 ---
 slug: toolbox-dev/introduction
 title: Introduction
+description: What's Toolbox Dev?
 authors: [m-falcon]
 tags: [toolbox-dev]
+keywords: [toolbox-dev, toolbox]
 ---
 
 ## What's Toolbox Dev?
