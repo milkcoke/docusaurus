@@ -7,6 +7,7 @@ tags: [toolbox-dev]
 keywords: [toolbox-dev, toolbox]
 ---
 
+import Hotjar from "../../src/components/UserFeedback/Hotjar";
 import ImageButton from "../../src/components/ButtonFeatures/imageButton";
 
 ## What's Toolbox Dev?
