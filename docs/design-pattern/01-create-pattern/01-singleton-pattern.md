@@ -74,12 +74,12 @@ And does not support 'inheritance' from other class. \
 Enum already inherits from Enum class in `java.lang.Enum.java`.
 
 # Summary
-| Approach              | Pros                                         | Cons                                                    |
-|-----------------------|----------------------------------------------|---------------------------------------------------------|
-| Naive                 | Simple                                       | Not thread-safe, Eager Loading                          |
-| Static factory method | Thread-safe                                  | Eager Loading                                           |
-| BillPugh              | Relative simple\ Thread-safe\ Lazy Loading   |                                                         |
-| Enum                  | Best simple\Thread-safe \ Prevent reflection | Eager Loading  \ Unable to inheritance from other class |
+| Approach              | Pros                                                        | Cons                                                            |
+|-----------------------|-------------------------------------------------------------|-----------------------------------------------------------------|
+| Naive                 | Simple                                                      | Not thread-safe, Eager Loading                                  |
+| Static factory method | Thread-safe                                                 | Eager Loading                                                   |
+| BillPugh              | Relative simple<br></br> Thread-safe <br></br> Lazy Loading |                                                                 |
+| Enum                  | Best simple<br></br>Thread-safe<br></br> Prevent reflection | Eager Loading  <br></br> Unable to inheritance from other class |
 
 
 > **Use BillPugh approach when you have to lazy load or required to inheritance** \
