@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components'
 const ImageButton = () => {
   return (
     <Div>
-      <DownSpan target="_blank" href='https://github.com/milkcoke/toolbox-gui/releases/download/v1.0.0/Toolbox-Windows-x64.exe' className='download'>
+      <DownSpan target="_blank" href='https://github.com/milkcoke/toolbox-gui/releases/download/v1.1.0/Toolbox-Windows-x64.exe' className='download'>
           <svg
               width='1000px'
               height='1000px'
@@ -19,7 +19,7 @@ const ImageButton = () => {
           <span>(x64)</span>
       </DownSpan>
 
-      <DownSpan target="_blank" href="https://github.com/milkcoke/toolbox-gui/releases/download/v1.0.0/Toolbox-osx-arm64.dmg" className='download'>
+      <DownSpan target="_blank" href="https://github.com/milkcoke/toolbox-gui/releases/download/v1.1.0/Toolbox-osx-arm64.dmg" className='download'>
         <svg
           width='1100px'
           height='1100px'
