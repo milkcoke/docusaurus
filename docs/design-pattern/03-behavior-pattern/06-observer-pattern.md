@@ -151,5 +151,5 @@ Subject 가 Observer 에게 데이터를 직접 전달한다.
 - 동기식으로 구현하면 디버깅이 쉽다.
 
 ### Cons
-- Pub/Sub 패턴에 비해 객체간 의존성 강결합이 발생한다. \
+- Pub/Sub 패턴에 비해 객체간 의존성 강결합이 발생한다. <br></br>
 Observer - Subject 간의 의존성이 강하다.
