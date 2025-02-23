@@ -7,6 +7,8 @@ last_update:
     date: 2025-02-10
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## Overview
 ![Observer pattern diagram](screenshots/observer_pattern_diagram.png)
@@ -39,7 +41,6 @@ public interface Subject {
 ```
 
 </TabItem>
-
 <TabItem value="observer" label="Observer">
 
 ```java
@@ -61,8 +62,9 @@ public interface Display {
 </Tabs>
 
 ### Concrete Class
+
 <Tabs>
-<TabItem value="conditionDisplay" label="ConditionDisplay">
+<TabItem value="conditiondisplay" label="ConditionDisplay">
 
 ```java
 @Slf4j
@@ -100,7 +102,6 @@ public class CurrentConditionDisplay implements Observer, Display {
 </TabItem>
 
 <TabItem value="statistics" label="Statistics">
-</TabItem>
 
 ```java
 @Slf4j
@@ -135,6 +136,7 @@ class StatisticsDisplay implements Display, Observer {
 }
 ```
 
+</TabItem>
 </Tabs>
 
 ### Push 방식
